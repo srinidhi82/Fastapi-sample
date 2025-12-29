@@ -15,8 +15,18 @@ A minimal FastAPI sample demonstrating CRUD endpoints (GET, POST, PUT, DELETE), 
 
 3. Run the app (local dev server):
 
-   uvicorn app.main:app --reload --port 8000
+   Preferred (development):
 
+   - Using Uvicorn directly (recommended):
+
+       uvicorn app.main:app --reload --port 8000
+
+   - Or run the provided helper entrypoint (safe when launching via `python`):
+
+       python run.py
+
+   Notes:
+   - Do NOT run `app/main.py` directly with `python app/main.py` — that will fail because it uses relative imports. Use one of the commands above.
    - Open the interactive docs at: http://127.0.0.1:8000/docs (Swagger UI)
    - Open the OpenAPI JSON at: http://127.0.0.1:8000/openapi.json
 
