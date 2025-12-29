@@ -10,6 +10,8 @@ jobs:
   test:
     name: Test (pytest)
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: ${{ github.workspace }}
     strategy:
       matrix:
         python-version: [3.11, 3.12, 3.13]
