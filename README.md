@@ -26,6 +26,16 @@ A minimal FastAPI sample demonstrating CRUD endpoints (GET, POST, PUT, DELETE), 
 
 ---
 
+## Learning resources included in this repo 📚
+
+- `docs/api_test_mastery.md` — a hands-on learning path to master API test automation (fixtures, parametrization, mocking, CI integration).
+- `docs/python_concepts.md` — focused explanations of Python concepts used in the project (classes, constructors, decorators, generators, dataclasses, `__main__`).
+- `docs/file_logic_and_learning.md` — file-by-file logic and learning takeaways (per-file explanations).
+- `tests/test_advanced.py` — additional tests demonstrating parametrization, generator tests, dataclass usage, monkeypatch example, and OpenAPI schema test.
+
+Check those docs to follow a step-by-step plan to master API test development.
+---
+
 ## What each Python file does 🔧
 
 - `app/main.py` — FastAPI application and request handlers
