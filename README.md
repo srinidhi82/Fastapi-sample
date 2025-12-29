@@ -1,5 +1,7 @@
 # Sample API (FastAPI)
 
+[![tests](https://github.com/srinidhi82/Fastapi-sample/actions/workflows/python-tests.yml/badge.svg)](https://github.com/srinidhi82/Fastapi-sample/actions)
+
 A minimal FastAPI sample demonstrating CRUD endpoints (GET, POST, PUT, DELETE), request/response examples, and tests.
 
 ## Quick start 🚀
