@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "/Users/srinidhi/Python/Agents-Py/sample_api/.venv/bin/python",
+  "python.analysis.extraPaths": ["./app"]
+}

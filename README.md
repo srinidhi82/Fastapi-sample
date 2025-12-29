@@ -30,6 +30,24 @@ A minimal FastAPI sample demonstrating CRUD endpoints (GET, POST, PUT, DELETE), 
 
 - `docs/api_test_mastery.md` — a hands-on learning path to master API test automation (fixtures, parametrization, mocking, CI integration).
 - `docs/python_concepts.md` — focused explanations of Python concepts used in the project (classes, constructors, decorators, generators, dataclasses, `__main__`).
+
+
+## Troubleshooting Pylance / import resolution ⚠️
+If you see warnings like `Import "fastapi.responses" could not be resolved` in VS Code or Pylance, it usually means the editor's Python interpreter is not set to the project virtual environment used for development.
+
+Quick fixes:
+
+1. Select the project interpreter in VS Code (recommended):
+   - Open Command Palette (⇧⌘P) -> `Python: Select Interpreter` -> choose `/Users/srinidhi/Python/Agents-Py/sample_api/.venv/bin/python`.
+   - Reload the window (Developer: Reload Window) if imports still show as unresolved.
+
+2. Alternatively, install dependencies into the interpreter used by VS Code (not recommended, better to use the project venv):
+   - `.venv/bin/python -m pip install -r requirements.txt`
+
+3. Use the example workspace settings file: copy `docs/vscode_settings_example.json` to `.vscode/settings.json` and edit the path if needed.
+
+Note: `.vscode/` is ignored in this repo by default to avoid committing local editor state. Use the example file to set up your editor quickly.
+
 - `docs/file_logic_and_learning.md` — file-by-file logic and learning takeaways (per-file explanations).
 - `tests/test_advanced.py` — additional tests demonstrating parametrization, generator tests, dataclass usage, monkeypatch example, and OpenAPI schema test.
 
