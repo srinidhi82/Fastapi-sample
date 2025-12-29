@@ -41,6 +41,14 @@ def test_get_missing_item():
     assert r.status_code == 404
 
 
+def test_create_item_content_type_header():
+    item = {"id": 42, "name": "ContentTypeTest", "description": "Check header"}
+    r = client.post("/items", json=item)
+    assert r.status_code == 201
+    # Ensure server sets Content-Type header for JSON responses
+    assert r.headers.get("content-type", "").startswith("application/json")
+
+
 def test_list_items():
     item1 = {"id": 1, "name": "One"}
     item2 = {"id": 2, "name": "Two"}
